@@ -1,13 +1,14 @@
 package com.easy;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component(value = "fizzBuzz")
 public class FizzBuzz {
-    public static void main(String[] args) {
-        FizzBuzz f = new FizzBuzz();
-        System.out.println(f.fizzBuzz(123));
-    }
+
     public List<String> fizzBuzz(int n) {
         List<String> res = new ArrayList<>();
         for (int i = 1; i <= n ; i++ ){

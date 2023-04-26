@@ -1,11 +1,6 @@
 package com.easy;
 
 public class SqrtX {
-    public static void main(String[] args) {
-        SqrtX s = new SqrtX();
-        System.out.println(s.mySqrt(2147395599));
-
-    }
     public int mySqrt(int x) {
         double left = 0, right = (x/2) + 1, mid = 0;
         int count = 0;
